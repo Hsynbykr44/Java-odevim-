@@ -1,14 +1,14 @@
-
-
 void main() {
- int ort = 70;
- if (ort >= 85) {
-  System.out.println("Takdir Belgesi aldın.");
- } else if (ort >= 75) {
-  System.out.println("Teşekkür Belgesi aldın");
- } else if (ort >= 50) {
-  System.out.println("Sınıfı geçtin.");
+ int ortalama = 86;
+ String sonuc;
+ if (ortalama>=85) {
+    sonuc= "Takdir Belgesi aldın.";
+ }else if  (ortalama>=75) {
+    sonuc= "Teşekkür Belgesi aldın.";
+ } else if (ortalama >= 50) {
+    sonuc= "Sınıfı geçtin.";
  } else {
-  System.out.println("Sınıfta kaldın.");
+    sonuc= "Sınıfta kaldın.";
  }
+ System.out.println(sonuc);
 }
