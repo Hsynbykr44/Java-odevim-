@@ -1,14 +1,32 @@
-void main() {
- int ortalama = 86;
- String sonuc;
- if (ortalama>=85) {
-    sonuc= "Takdir Belgesi aldın.";
- }else if  (ortalama>=75) {
-    sonuc= "Teşekkür Belgesi aldın.";
- } else if (ortalama >= 50) {
-    sonuc= "Sınıfı geçtin.";
- } else {
-    sonuc= "Sınıfta kaldın.";
- }
- System.out.println(sonuc);
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String[] sehirler = {
+                "İstanbul",
+                "Ankara",
+                "İzmir",
+                "Bursa",
+                "Adana",
+                "Antalya",
+                "Konya",
+                "Trabzon",
+                "Samsun",
+                "Eskişehir",
+                "Gaziantep",
+                "Erzurum",
+                "Kayseri",
+                "Mersin",
+                "Muğla"
+        };
+
+        Arrays.sort(sehirler);
+
+        System.out.println("Türkiye'deki Bazı Şehirler:");
+
+        for (int i = 0; i < sehirler.length; i++) {
+            System.out.println(sehirler[i]);
+        }
+    }
 }
